@@ -13,7 +13,7 @@ def web_scraping(url):
         # Tüm metin içeriğini alır
         haber_basliklari = soup.find_all('h2', class_='news-title')  # Sayfanın HTML yapısına göre uygun etiket ve sınıfı belirler
         
-        # Sonucu ekrana basar
+        # Sonuclari ekrana basar.
         for baslik in haber_basliklari:
             print(baslik.get_text().strip())
     else:
