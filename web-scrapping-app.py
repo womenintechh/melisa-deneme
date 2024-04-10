@@ -17,6 +17,7 @@ def web_scraping(url):
         for baslik in haber_basliklari:
             print(baslik.get_text().strip())
     else:
+        #hata mesaji verir.
         print(f"Hata: {response.status_code} - Sayfa çekilemedi.")
 
 if __name__ == "__main__":
